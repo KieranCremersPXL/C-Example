@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FirnessAppKieran.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#3EC4AA">
+            <Frame BackgroundColor="#4ce6c7" Padding="24" Margin="8" CornerRadius="0">
+                <Label Text="PIT Mobile App" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Naam:"/>
+            <Entry x:Name="username"/>
+            <Label Text="Wachtwoord:"/>
+            <Entry x:Name="password" IsPassword="True"></Entry>
+            <StackLayout >
+                <Button Clicked="Login" Style="{StaticResource DefaultButton}" Text="Login"/>
+                <Button Clicked="Register" Style="{StaticResource DefaultButton}" Text="Register"/>
+            </StackLayout>
+            <Image Source="https://www.zol.be/sites/all/themes/zol/img/ZOL-logo-105h.png" Margin="100" Scale="3"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "dgSpecHash": "NeIuDEYVJDKB7gPteqzT8fD6HqRgV2aLCaY75J/xpboi1Z3Ijb1Fw3cB5P7WwR030WyLPPo6KRCRH7xmSm8I+w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\creme\\source\\repos\\FirnessAppKieran\\FirnessAppKieran\\FirnessAppKieran\\FirnessAppKieran.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\creme\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\creme\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\creme\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\creme\\.nuget\\packages\\plugin.mediamanager\\0.9.0\\plugin.mediamanager.0.9.0.nupkg.sha512",
+    "C:\\Users\\creme\\.nuget\\packages\\plugin.mediamanager.forms\\0.9.0\\plugin.mediamanager.forms.0.9.0.nupkg.sha512",
+    "C:\\Users\\creme\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\creme\\.nuget\\packages\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\creme\\.nuget\\packages\\xamarin.forms\\4.8.0.1451\\xamarin.forms.4.8.0.1451.nupkg.sha512",
+    "C:\\Users\\creme\\.nuget\\packages\\xamarin.forms.pancakeview\\1.3.7\\xamarin.forms.pancakeview.1.3.7.nupkg.sha512",
+    "C:\\Users\\creme\\.nuget\\packages\\zxing.net.mobile\\2.3.2\\zxing.net.mobile.2.3.2.nupkg.sha512",
+    "C:\\Users\\creme\\.nuget\\packages\\zxing.net.mobile.forms\\2.3.2\\zxing.net.mobile.forms.2.3.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ZXing.Net.Mobile 2.3.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ZXing.Net.Mobile",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ZXing.Net.Mobile.Forms 2.3.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "ZXing.Net.Mobile.Forms",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}

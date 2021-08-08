@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirnessAppKieran.Views.RegisterView">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#3EC4AA">
+            <Frame BackgroundColor="#4ce6c7" Padding="24" Margin="8" CornerRadius="0">
+                <Label Text="Registreren" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Naam:"/>
+            <Entry x:Name="eNaam"></Entry>
+            <Label Text="Email:"/>
+            <Entry x:Name="eMail"></Entry>
+            <Label Text="Functie:"/>
+            <Entry x:Name="eFunctie"></Entry>
+            <Label Text="Wachtwoord:"/>
+            <Entry x:Name="ePassword" IsPassword="True"></Entry>
+            <Label Text="Herhaal Wachtwoord:"/>
+            <Entry x:Name="hEPassword" IsPassword="True"></Entry>
+            <StackLayout >
+                <Button Clicked="Register" Text="Register"/>
+            </StackLayout>
+            <Image Source="https://www.zol.be/sites/all/themes/zol/img/ZOL-logo-105h.png" Margin="20" Scale="2"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirnessAppKieran.Views.HomePage"
+             xmlns:vm="clr-namespace:FirnessAppKieran.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:HomeViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#EB1E80</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Background="#ff248d">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="450"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="2" Grid.ColumnSpan="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="5"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="1" Grid.Column="1" Clicked="Musicpage" FontSize="30" Text="🎵"></Button>
+                <Button Grid.Row="1" Grid.Column="3" Clicked="FoodPage" FontSize="30" Text="🍔"></Button>
+                <Button Grid.Row="1" Grid.Column="5" FontSize="30" Text="🏅"></Button>
+                <Button Grid.Row="1" Grid.Column="7" Clicked="Test" FontSize="30" Text="⚙️"></Button>
+            </Grid>
+            
+            
+            <StackLayout Background="white" Grid.Row="1" Grid.Column="1">
+                <Label Style="{StaticResource DefaultTitle}" Text="Workout Time"/>
+                <Label TextColor="black" HorizontalTextAlignment="Center" Text="NAN"/>
+            </StackLayout>
+            <StackLayout Background="white" Grid.Row="1" Grid.Column="2">
+                <Label Style="{StaticResource DefaultTitle}" Text="Calories Burned"/>
+                <Label TextColor="black" HorizontalTextAlignment="Center" Text="NAN"/>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
